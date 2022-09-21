@@ -20,7 +20,7 @@ public class Guia7Ej6 {
 
         System.out.println("La cantidad Actual es : " + cafe.getCantidadActual());
 
-        
+        cafe.vaciarCafetera();
        
     }
 

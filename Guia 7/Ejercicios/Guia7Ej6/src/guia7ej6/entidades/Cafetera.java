@@ -64,6 +64,8 @@ public class Cafetera {
        public void vaciarCafetera(){
        
            capacidadActual = 0;
+           
+           System.out.println("La cafetera esta vacia");
     }
     
     
