@@ -31,7 +31,7 @@ public class ServicioPersona {
     
     }
     
-    public int calcularEdad(Persona nacimiento){
+    public  int calcularEdad(Persona nacimiento){
     
         
         // comparo cuantos años hay entre la fecha actual y la fecha de nacimiento
@@ -39,8 +39,7 @@ public class ServicioPersona {
         Date fechaactual = new Date();
         
         Date fnacimiento = nacimiento.getFechanacimiento();
-        
-        
+                
         int años = (fechaactual.getYear() - fnacimiento.getYear());
         
         System.out.println("La persona tiene " + años + " años");
@@ -51,6 +50,9 @@ public class ServicioPersona {
     
     public boolean menorQue(int edad, int años) {
        
+        Scanner leer = new Scanner(System.in).useDelimiter("\n").useLocale(Locale.US);
+        System.out.println("Ingresar una edad para comparar:");
+        int edad1 = leer.nextInt();
               
     return (edad<años);
           
@@ -58,12 +60,12 @@ public class ServicioPersona {
     
     public void mostrarPersona(Persona p){  
     
-        System.out.println("La persona se llama:" + p.getNombre() );
-        System.out.println("La persona nacio el: " +p.getFechanacimiento());
+        System.out.println("La persona se llama: " + p.getNombre() );
+        System.out.println("La persona nacio el: " + p.getFechanacimiento());
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         String fechaconvertida = sdf.format(p.getFechanacimiento());
         System.out.println("La persona nacio el: " + fechaconvertida);   
-        System.out.println("La persona nacio el: " + p.getFechanacimiento());
+        
     
     }
     

@@ -16,13 +16,14 @@ public class Guia7Ej12 {
         sp.calcularEdad(p1);
 
         Scanner leer = new Scanner(System.in).useDelimiter("\n").useLocale(Locale.US);
+        
+        int edad1=0;
 
-        System.out.println("Ingresar una edad para comparar:");
+        System.out.println("La edad ingresada es menor que la edad de la persona?: " + sp.menorQue(edad1, sp.calcularEdad(p1)));
 
-        int edad = leer.nextInt();
-
-        System.out.println("La edad ingresada es menor que la edad de la persona?: " + sp.menorQue(edad, sp.calcularEdad(p1)));
-
+        System.out.println("--------------------------");
+        
+        
         sp.mostrarPersona(p1);
         
     }
