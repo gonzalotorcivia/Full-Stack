@@ -9,8 +9,9 @@ public class Guia7Ej7 {
 
         servicioPersona sp = new servicioPersona();
 
-        //Persona P1 = sp.crearPersona();
-        Persona P1 = new Persona("Jose",18,"H",80,1.80);
+        
+        Persona P1 = sp.crearPersona();
+       // Persona P1 = new Persona("Jose",18,"H",80,1.80);
         
         int mayores = 0;
         int pesoideal = 0;
